@@ -13,7 +13,7 @@
 <b>Город: </b>${product.city}<br>
 <b>Создатель: </b>${product.createUser}<br>
 <hr>
-<form action="/product/delete/${product.id}" method "post">
+<form action="/product/delete/${product.id}" method="post">
     <input type="submit" value="Удалить"/>
 </form>
 </body>

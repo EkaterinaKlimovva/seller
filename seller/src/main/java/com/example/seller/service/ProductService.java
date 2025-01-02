@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class ProductService {
     private List<Product> products = new ArrayList<>();
-    private long ID;
+    private long ID = 0;
 
     {
         products.add(new Product(++ID, "IPhone", "desc", 60000, "Moscow", "Todd"));
@@ -26,7 +26,7 @@ public class ProductService {
         products.add(product);
     }
 
-    public void deleteProduct(long id) {
+    public void deleteProduct(Long id) {
         products.removeIf(product -> product.getId() == id);
     }
 
